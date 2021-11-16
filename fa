@@ -1,0 +1,28 @@
+[1mdiff --git a/build/classes/githubarthuralves/GithubArthurAlves.class b/build/classes/githubarthuralves/GithubArthurAlves.class[m
+[1mindex 4a29e1d..be89b07 100644[m
+Binary files a/build/classes/githubarthuralves/GithubArthurAlves.class and b/build/classes/githubarthuralves/GithubArthurAlves.class differ
+[1mdiff --git a/src/githubarthuralves/GithubArthurAlves.java b/src/githubarthuralves/GithubArthurAlves.java[m
+[1mindex 6d1aaf6..7a8b7c6 100644[m
+[1m--- a/src/githubarthuralves/GithubArthurAlves.java[m
+[1m+++ b/src/githubarthuralves/GithubArthurAlves.java[m
+[36m@@ -5,15 +5,16 @@[m
+  */[m
+ package githubarthuralves;[m
+ import java.util.Scanner;[m
+[32m+[m[32mimport javax.swing.JOptionPane;[m
+ [m
+ public class GithubArthurAlves {[m
+ [m
+     public static void main(String[] args) {[m
+         Scanner leia = new Scanner (System.in);[m
+[31m-        String nome;[m
+[31m-        System.out.println("digite seu nome");[m
+[31m-        nome = leia.next();[m
+[31m-        System.out.println(nome+" Bem vindo ao GitHub");[m
+[32m+[m[32m        String nome;[m[41m  [m
+[32m+[m[32m        nome = JOptionPane.showInputDialog(null,"qual seu nome ");[m
+[32m+[m[32m        JOptionPane.showMessageDialog(null, nome+" Bem vindo");[m
+[32m+[m[32m        System.exit(0);[m
+     }[m
+     [m
+ }[m

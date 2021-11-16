@@ -5,15 +5,16 @@
  */
 package githubarthuralves;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class GithubArthurAlves {
 
     public static void main(String[] args) {
         Scanner leia = new Scanner (System.in);
-        String nome;
-        System.out.println("digite seu nome");
-        nome = leia.next();
-        System.out.println(nome+" Bem vindo ao GitHub");
+        String nome;  
+        nome = JOptionPane.showInputDialog(null,"qual seu nome ");
+        JOptionPane.showMessageDialog(null, nome+" Bem vindo");
+        System.exit(0);
     }
     
 }
